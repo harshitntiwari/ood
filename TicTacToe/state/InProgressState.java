@@ -1,5 +1,6 @@
 package TicTacToe.state;
 
+import TicTacToe.exceptions.InvalidMoveException;
 import TicTacToe.model.Game;
 import TicTacToe.model.Player;
 
@@ -9,6 +10,9 @@ public class InProgressState implements GameState {
     public void makeMove(Game game, Player player, int row, int col) {
         if (game.getCurrentPlayer() != player) {
             // throw error because wrong player is making the move
+            throw new InvalidMoveException(
+                "It is not your turn " + player.getName()
+            );
         }
         // make the move:
         game.getBoard().placeSymbol(row, col, player.getSymbol());
