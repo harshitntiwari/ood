@@ -1,7 +1,9 @@
 Core Requirements:
 1. The Cache should support the following operations. The `put` and `get` methods should be efficient, ideally O(1).
-   - `put(key, val)` : Put the key-value pair in the cache. if the key is already present, overwrite the value. If the cache is full, use the Cache eviction policy as mentioned in point 3.
-   - `get(key)` : Return the value corresponding to the `key`.
+  - `put(key, val)` : Put the key-value pair in the cache. 
+    - If the key is already present, overwrite the value. 
+    - If the cache is full, use the Cache eviction policy as mentioned in point 3.
+  - `get(key)` : Return the value corresponding to the `key`.
     - If the key exists, move it to the front of the cache, then return value.
     - If the key does not exist, return -1.
   - `remove(key)` : Remove a key from the cache.
