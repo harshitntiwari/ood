@@ -1,6 +1,6 @@
 package TicTacToe.state;
 
-import TicTacToe.model.Game;
+import TicTacToe.Game;
 import TicTacToe.model.Player;
 
 public interface GameState {

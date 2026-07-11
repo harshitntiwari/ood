@@ -1,7 +1,7 @@
 package TicTacToe.state;
 
+import TicTacToe.Game;
 import TicTacToe.exceptions.InvalidMoveException;
-import TicTacToe.model.Game;
 import TicTacToe.model.Player;
 
 public class DrawState implements GameState {

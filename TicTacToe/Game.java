@@ -1,5 +1,7 @@
-package TicTacToe.model;
+package TicTacToe;
 
+import TicTacToe.model.Board;
+import TicTacToe.model.Player;
 import TicTacToe.state.GameState;
 import TicTacToe.state.InProgressState;
 import TicTacToe.strategies.ColumnWinningStrategy;
@@ -10,9 +12,9 @@ import java.util.List;
 
 public class Game {
 
-    private Board board;
-    private Player player1;
-    private Player player2;
+    private final Board board;
+    private final Player player1;
+    private final Player player2;
     private Player currentPlayer;
     private Player winner;
     private GameState state;

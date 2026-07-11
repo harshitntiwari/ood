@@ -9,14 +9,12 @@ class Main {
         Player player1 = new Player("Tesla", Symbol.X);
         Player player2 = new Player("Edison", Symbol.O);
 
-        TicTacToeManager manager = TicTacToeManager.getInstance();
-        manager.createGame(3, player1, player2);
-        manager.printBoard();
+        Game game = new Game(3, player1, player2);
+        System.out.println("Game started: " + player1.getName() + " vs " + player2.getName());
+        game.getBoard().printBoard();
 
-        manager.makeMove(player1, 0, 0);
-        manager.makeMove(player2, 1, 0);
-        manager.makeMove(player1, 0, 1);
-        manager.makeMove(player2, 1, 1);
-        manager.makeMove(player1, 0, 2);
+        System.out.printf("Player %s makes move at (0, 0)%n", player1.getName());
+        game.makeMove(player1, 0, 0);
+        game.getBoard().printBoard();
     }
 }
