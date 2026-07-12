@@ -5,17 +5,13 @@ import TicTacToe.enums.Symbol;
 public class Cell {
 
     private Symbol symbol;
-    private boolean isEmpty;
 
-    public Cell() {
-        this.isEmpty = true;
-    }
+    public Cell() {}
 
     // getters and setters for private attributes:
 
     public void setSymbol(Symbol symbol) {
         this.symbol = symbol;
-        this.isEmpty = false;
     }
 
     public Symbol getSymbol() {
@@ -23,6 +19,6 @@ public class Cell {
     }
 
     public boolean isEmpty() {
-        return this.isEmpty;
+        return this.symbol == null;
     }
 }
