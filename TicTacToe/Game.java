@@ -2,8 +2,8 @@ package TicTacToe;
 
 import TicTacToe.model.Board;
 import TicTacToe.model.Player;
-import TicTacToe.state.GameState;
-import TicTacToe.state.InProgressState;
+import TicTacToe.states.GameState;
+import TicTacToe.states.InProgressState;
 import TicTacToe.strategies.ColumnWinningStrategy;
 import TicTacToe.strategies.DiagonalWinningStrategy;
 import TicTacToe.strategies.RowWinningStrategy;

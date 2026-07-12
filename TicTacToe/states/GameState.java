@@ -1,4 +1,4 @@
-package TicTacToe.state;
+package TicTacToe.states;
 
 import TicTacToe.Game;
 import TicTacToe.model.Player;
