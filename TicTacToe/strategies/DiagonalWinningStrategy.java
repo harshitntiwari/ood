@@ -17,13 +17,12 @@ public class DiagonalWinningStrategy implements WinningStrategy {
         if (diagWin) return true;
 
         diagWin = true;
-        for (int idx = board.getSize() - 1; idx >= 0; idx--) {
-            if (board.getCell(idx, idx).getSymbol() != player.getSymbol()) {
+        for (int idx = 0; idx < board.getSize(); idx++) {
+            if (board.getCell(idx, board.getSize() - 1 - idx).getSymbol() != player.getSymbol()) {
                 diagWin = false;
                 break;
             }
         }
-        if (diagWin) return true;
-        return false;
+        return diagWin;
     }
 }
