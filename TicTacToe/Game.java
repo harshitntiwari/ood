@@ -38,14 +38,16 @@ public class Game {
     // business logic:
 
     public void makeMove(Player player, int row, int col) {
+        // STATE DESIGN PATTERN:
         // the logic to make a move will depend on the current state of the game, i.e.
         // whether the game is in progress, draw or win state.
-        // we can write all that logic here itself, but a cleaner way is to split that logic
+        // we can write all that logic here itself using conditionals, but a cleaner way is to split that logic
         // as written inside the state package
         state.makeMove(this, player, row, col);
     }
 
     public boolean checkWinner(Player player) {
+        // STRATEGY DESIGN PATTERN:
         // we could've written all the logic here itself to check
         // if there's a combo of 3 of this player's symbol occuring in a row, col or diagonally.
         // but a cleaner approach is to do this checking in 3 different strategies:
