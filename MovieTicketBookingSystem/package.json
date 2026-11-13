@@ -1,0 +1,16 @@
+{
+  "name": "movie-ticket-booking-system",
+  "version": "1.0.0",
+  "author": "Harshit Tiwari",
+  "description": "Movie ticket booking system",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "tsx Main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}

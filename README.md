@@ -8,8 +8,11 @@ Steps for object-oriented design problem solving:
 - Entities: What will be the core entities in your design? You can generally identify these by looking at the nouns in your requirements.
 - Class design: Start designing the classes based on the entities. Write down the state (attributes) and behavior (methods) for these classes (don't implement them yet). Identify the enums required.
 - Implementation: Objectives of the implementation should be to code: primary capabilities + error handling.
-  - Implement helper functionalities (wherever applicable) like: strategies, states, factories, observers, etc.
+  - enums
   - Implement the core logic of the core entities.
+  - Identify which design patterns you can use
+  - Implement helper functionalities (wherever applicable) like: strategies, states, factories, observers, etc.
+  - orchestrator
   - Finally, handle edge cases (error handling).
 
 ## Important signals
