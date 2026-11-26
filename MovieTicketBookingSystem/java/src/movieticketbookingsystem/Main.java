@@ -1,16 +1,16 @@
-package MovieTicketBookingSystem;
+package movieticketbookingsystem;
 
-import MovieTicketBookingSystem.enums.PaymentType;
-import MovieTicketBookingSystem.enums.SeatType;
-import MovieTicketBookingSystem.model.Booking;
-import MovieTicketBookingSystem.model.Movie;
-import MovieTicketBookingSystem.model.Screen;
-import MovieTicketBookingSystem.model.Seat;
-import MovieTicketBookingSystem.model.Show;
-import MovieTicketBookingSystem.model.Theater;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
+import movieticketbookingsystem.enums.PaymentType;
+import movieticketbookingsystem.enums.SeatType;
+import movieticketbookingsystem.model.Booking;
+import movieticketbookingsystem.model.Movie;
+import movieticketbookingsystem.model.Screen;
+import movieticketbookingsystem.model.Seat;
+import movieticketbookingsystem.model.Show;
+import movieticketbookingsystem.model.Theater;
 
 public class Main {
     public static void main(String[] args) {
