@@ -1,0 +1,16 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "author": "Harshit Tiwari",
+  "description": "Rate Limiter",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "start": "tsx Main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.11",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
